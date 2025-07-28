@@ -1,8 +1,11 @@
-# AlphaGenome MCP Server
+![AlphaGenome MCP Server Logo](logo.png)
+# Unofficial AlphaGenome MCP Server
 
 🧬 **Production-Ready Model Context Protocol (MCP) Server for Google DeepMind's AlphaGenome API**
 
 A comprehensive MCP server that provides access to Google DeepMind's cutting-edge AlphaGenome API, enabling genomic sequence analysis, variant effect prediction, and regulatory element identification through natural language commands.
+
+**Developed by [Augmented Nature](https://augmentednature.ai)**
 
 ## 🎯 Status: Production Ready
 
