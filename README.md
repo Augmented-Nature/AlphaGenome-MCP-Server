@@ -215,29 +215,6 @@ npm run build
 - **Genomic interval analysis**: ~1 second per 2KB interval
 - **DNA sequence prediction**: ~0.5 seconds per 2KB sequence
 
-## 🧪 Testing & Validation
-
-### Run Comprehensive Tests
-```bash
-# Set your API key
-export ALPHAGENOME_API_KEY="your-api-key-here"
-
-# Run full test suite (19 tools)
-python3.11 test_all_tools.py
-
-# Expected results: 17/19 tools passing (89.5% success rate)
-```
-
-### Test Results Summary
-```
-✅ Core Prediction Tools: 5/5 (100%)
-✅ Batch Processing Tools: 4/4 (100%) 
-⚠️ Advanced Scoring Tools: 1/3 (API constraints)
-✅ Utility & Validation Tools: 7/7 (100%)
-
-🎯 Overall Success Rate: 17/19 (89.5%)
-```
-
 ## 🔧 Development
 
 ### Build Commands
@@ -354,17 +331,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - **MCP Protocol**: https://modelcontextprotocol.io/
 - **Test Results**: Run `python3.11 test_all_tools.py` for detailed validation
 
-## 📊 Changelog
-
-### v0.1.0 - Production Release
-- ✅ **8 fully functional MCP tools** with real API integration
-- ✅ **17 Python client tools** with comprehensive testing
-- ✅ **Batch processing capabilities** with parallel workers
-- ✅ **Professional error handling** and input validation
-- ✅ **Comprehensive test suite** with 89.5% success rate
-- ✅ **Production-ready documentation** and examples
-- ✅ **Real-world validation** with live AlphaGenome API
-
----
-
-🧬 **Ready for Production Genomic Analysis** - Start analyzing DNA sequences, predicting variant effects, and identifying regulatory elements with Google DeepMind's cutting-edge AI models through natural language commands!
