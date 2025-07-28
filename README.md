@@ -111,21 +111,6 @@ npm run build
 
 4. **Configure MCP:**
 
-**For Cline (VSCode):**
-```json
-{
-  "mcpServers": {
-    "alphagenome": {
-      "command": "node",
-      "args": ["/path/to/alphagenome-server/build/index.js"],
-      "env": {
-        "ALPHAGENOME_API_KEY": "your-api-key-here"
-      }
-    }
-  }
-}
-```
-
 **For Claude Desktop:**
 ```json
 {
