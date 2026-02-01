@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  alphagenome-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: augmented-nature/alphagenome-server:latest
+    container_name: alphagenome-mcp-server
+
+    # Environment variables
+    environment:
+      - ALPHAGENOME_API_KEY=${ALPHAGENOME_API_KEY}
+      - NODE_ENV=production
+
+    # Stdin/stdout for MCP communication
+    stdin_open: true
+    tty: true
+
+    # Resource limits (optional)
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 2G
+        reservations:
+          cpus: '1'
+          memory: 512M
+
+    # Restart policy
+    restart: unless-stopped
+
+    # Logging configuration
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+    # Health check
+    healthcheck:
+      test: ["CMD", "node", "-e", "process.exit(0)"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+
+# Optional: Network configuration
+networks:
+  default:
+    name: alphagenome-network
